@@ -2,7 +2,8 @@ const selectors = [
   ':is(div[role="listitem"]):has(:is(.s-result-list .a-spacing-micro))',
   ":is(div[data-asin]):has(:is(.sponsored-brand-label-info-desktop))",
   ':is(div[data-asin]):has(:is([data-is-sponsored-label-active="true"]))',
-  ':is([class*=item-row]):has(:is([src="https://f.media-amazon.com/images/I/11TUGKWP39L.png"]))',
+  ':is([class*="item-row-"][class*="-container"]):has(:is([class*="sticker-container"] > [class*="sticker-image-ku"]))',
+  ':is([class*="manga-genre-ranking-card"][class*="grid-item"]):has(:is([class*="sticker-container"] > [class*="sticker-image-ku"]))',
 ];
 
 selectors.forEach((selector) => {
